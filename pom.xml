@@ -64,16 +64,11 @@
             <artifactId>micronaut-data-tx</artifactId>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>io.micronaut.sql</groupId>
-            <artifactId>micronaut-jooq</artifactId>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.transaction</groupId>
-            <artifactId>javax.transaction-api</artifactId>
-            <version>1.3</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>io.micronaut.sql</groupId>-->
+        <!--            <artifactId>micronaut-jooq</artifactId>-->
+        <!--            <scope>compile</scope>-->
+        <!--        </dependency>-->
         <!--
         <dependency>
           <groupId>io.micronaut.sql</groupId>
