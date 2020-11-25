@@ -61,7 +61,7 @@
         </dependency>
         <dependency>
             <groupId>io.micronaut.data</groupId>
-            <artifactId>micronaut-data-jdbc</artifactId>
+            <artifactId>micronaut-data-tx</artifactId>
             <scope>compile</scope>
         </dependency>
         <dependency>
