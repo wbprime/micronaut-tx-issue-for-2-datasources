@@ -11,7 +11,17 @@ class TheRepositoryTest {
     TheRepository repository;
 
     @Test
-    void test() {
+    void test1() {
         repository.createTableInA();
+    }
+
+    @Test
+    void test2() {
+        repository.createTableInB();
+    }
+
+    @Test
+    void test3() {
+        repository.doSomethingInTransaction();
     }
 }

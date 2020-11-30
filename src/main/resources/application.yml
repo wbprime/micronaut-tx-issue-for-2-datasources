@@ -2,6 +2,11 @@ micronaut:
   application:
     name: demo
 datasources:
+  #default:
+  #  url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  #  driverClassName: org.h2.Driver
+  #  username: ua
+  #  password: 'sa'
   a:
     url: jdbc:h2:mem:db_a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     driverClassName: org.h2.Driver

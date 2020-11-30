@@ -1,5 +1,7 @@
 package com.example;
 
+import io.micronaut.transaction.annotation.TransactionalAdvice;
+
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
@@ -40,7 +42,7 @@ public class TheRepository {
         }
     }
 
-    @com.citics.itst.sbl.tasks.dao.Transactional("b")
+    @TransactionalAdvice(transactionManager = "b")
     public void doSomethingInTransaction() {
         final DataSource ds = b;
         try (final Connection c = ds.getConnection(); final Statement stmp = c.createStatement()) {
