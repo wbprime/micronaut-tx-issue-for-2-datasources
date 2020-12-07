@@ -109,10 +109,6 @@
             <plugin>
                 <groupId>io.micronaut.build</groupId>
                 <artifactId>micronaut-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass></mainClass>
-                    <appArguments>-Djava.util.logging.LogManager=org.jboss.logmanager.LogManager</appArguments>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
