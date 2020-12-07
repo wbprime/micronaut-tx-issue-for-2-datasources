@@ -22,7 +22,7 @@ public class TheRepository {
         this.b = b;
     }
 
-    @com.citics.itst.sbl.tasks.dao.Transactional("a")
+    @TransactionalAdvice("a")
     public void createTableInA() {
         final DataSource ds = a;
         try (final Connection c = ds.getConnection(); final Statement stmp = c.createStatement()) {
@@ -32,7 +32,7 @@ public class TheRepository {
         }
     }
 
-    @com.citics.itst.sbl.tasks.dao.Transactional("b")
+    @TransactionalAdvice("b")
     public void createTableInB() {
         final DataSource ds = b;
         try (final Connection c = ds.getConnection(); final Statement stmp = c.createStatement()) {
@@ -42,6 +42,7 @@ public class TheRepository {
         }
     }
 
+//    @TransactionalAdvice(value = "b")
     @TransactionalAdvice(transactionManager = "b")
     public void doSomethingInTransaction() {
         final DataSource ds = b;
